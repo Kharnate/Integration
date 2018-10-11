@@ -78,7 +78,7 @@ public class Main {
         double newNum = myNumber*Math.PI;
         System.out.println(newNum);
         
-        if(randnum < 5) {;
+        if(randnum < 5) {
             System.out.println("Random Number is less than 5");
         }
         
@@ -129,9 +129,7 @@ public class Main {
         System.out.println("Other Relations: "+ sum*differ +", "+ sum % differ +", "+ sum / differ);
         System.out.println(myNumber += differ);
         
-        
-        
-        
+        //for checking........
     }
     
 }
