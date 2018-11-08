@@ -201,6 +201,27 @@ public class Main {
     {
     }
 
+    class Calculator {
+      public double calcY (double m, double x) {
+        double y = 0;
+        y =m*x ; 
+        return y;
+      }
+      public double calcY (double m, double x, double b) {
+        double y = 0;
+        y = (m*x) + b;
+        return y;
+      }
+    }
+    
+int scores [] = null;
+    int max = scores [0];
+    for (int z = 1; z < scores.length; z++) {
+      if (scores [z] > max) {
+        max = scores [z];
+      }
+    }
+
     
 
   }
