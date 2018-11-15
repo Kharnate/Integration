@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 // Karan Patel
@@ -214,14 +215,22 @@ public class Main {
       }
     }
     
-int scores [] = null;
-    int max = scores [0];
-    for (int z = 1; z < scores.length; z++) {
-      if (scores [z] > max) {
-        max = scores [z];
-      }
+    
+    
+    
+    int a = 0;
+    int b = 10;
+    try{
+      int ex = b/a;
     }
-
+    catch (Exception ex){
+      System.out.println(ex);
+    }
+    
+    int[] arr = {-1, -6, 0, 1 , 7, 20, -77, 12, -2};
+    Arrays.sort(arr);
+    System.out.println("Minimum = "+ arr[0] );
+    System.out.println("Mamimum = "+ arr [arr.length-1] );
     
 
   }
