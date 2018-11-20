@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.ArrayList;
 
 // Karan Patel
 /*
@@ -187,7 +188,7 @@ public class Main {
       System.out.println("new num value is = " + num); 
     }
 
-    /*
+    /*Break:
      * It is used to skip the current iteration in a loop and not-terminate the loop itself. The
      * rest of the body is skipped to the end of the loop. When the program reaches the end of the
      * loop, the program jumps back to test the loop continuation condition.
@@ -227,12 +228,27 @@ public class Main {
       System.out.println(ex);
     }
     
-    int[] arr = {-1, -6, 0, 1 , 7, 20, -77, 12, -2};
+    int[] arr = {-1, -6, 0, 1 , 7, 20, -77, 12, -2};  //declaration, instantiation and initialization
     Arrays.sort(arr);
     System.out.println("Minimum = "+ arr[0] );
     System.out.println("Mamimum = "+ arr [arr.length-1] );
+    int total = 0;
+    for (int k : arr) {
+      total += k;
+    }
+    System.out.println(total);
     
+    int y=0;
+    for (int z=0; z < 5; z++) {
+      array [z] = z + y;
+      y = z + 1;
+      System.out.println(array);
+    
+  }
 
+
+
+    
   }
 
 }
