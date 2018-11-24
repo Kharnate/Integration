@@ -1,3 +1,9 @@
+/*Private fields, public getters and setters.
+ * A constructor with and without parameters.
+ * Overload a method.
+ * Describe inheritance and its benefits.
+ * Use super and to access objects and constructors.
+ */
 
 public class CollegeClass {
 

@@ -172,7 +172,7 @@ public class Main {
       }
     }
 
-    /*
+    /*Break:
      * When a break statement is executed inside a loop statement is terminated immediately. The
      * program continues to execute with the statement following the loop statement.
      */
@@ -188,12 +188,12 @@ public class Main {
       System.out.println("new num value is = " + num); 
     }
 
-    /*Break:
+    /*Continue:
      * It is used to skip the current iteration in a loop and not-terminate the loop itself. The
      * rest of the body is skipped to the end of the loop. When the program reaches the end of the
      * loop, the program jumps back to test the loop continuation condition.
      */
-
+  
 
     int digit = 1;
     do {
@@ -216,9 +216,7 @@ public class Main {
       }
     }
     
-    
-    
-    
+    //Exception Handling
     int a = 0;
     int b = 10;
     try{
@@ -228,26 +226,43 @@ public class Main {
       System.out.println(ex);
     }
     
+    //Finding the smallest and largest number, one dimensional array
     int[] arr = {-1, -6, 0, 1 , 7, 20, -77, 12, -2};  //declaration, instantiation and initialization
     Arrays.sort(arr);
-    System.out.println("Minimum = "+ arr[0] );
-    System.out.println("Mamimum = "+ arr [arr.length-1] );
+    System.out.println("Min = "+ arr[0] );
+    System.out.println("Max = "+ arr [arr.length-1] );
     int total = 0;
+    //Use the enhanced for loop
     for (int k : arr) {
       total += k;
     }
     System.out.println(total);
     
-    int y=0;
-    for (int z=0; z < 5; z++) {
-      array [z] = z + y;
-      y = z + 1;
-      System.out.println(array);
+    //Search and identify the index in array
+    int [] aray = {1, 101, 1001, 10001};
+    System.out.println("The index of element 10001 is : "+Arrays.binarySearch(aray,10001));
     
-  }
+    //Get a sum of the values in an array using an accumulator
+    int [] numbers = {1,2,3,4,5};
+    int s = 0;
+    //Use the enhanced for loop
+    for (int z : numbers) {
+    	s += z;
+    }
+    System.out.println(s);
+    
+    //Use ArrayList
+    ArrayList<Integer> n = new ArrayList <Integer> ();
+    n.add(10);
+    n.add(100);
+    n.add(1);
+    System.out.println(n.get(0)+ n.get(1) + n.get(2));
 
-
-
+    //Multi-dimensional Arrays
+    int [] [] arrays = { {0,0}, {0,1}, {1,0}, {1,1} };
+    //Search the coordinates where a value was found
+    
+    	
     
   }
 
