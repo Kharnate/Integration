@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.ArrayList;
 
 // Karan Patel
@@ -171,6 +172,7 @@ public class Main {
         break;
       }
     }
+    
 
     /*Break:
      * When a break statement is executed inside a loop statement is terminated immediately. The
@@ -261,7 +263,23 @@ public class Main {
     //Multi-dimensional Arrays
     int [] [] arrays = { {0,0}, {0,1}, {1,0}, {1,1} };
     //Search the coordinates where a value was found
-    
+    Scanner keyboard = new Scanner (System.in);
+    final int ROWS = 3;
+    final int COLS = 4;
+    int [] [] values = new int [ROWS][COLS];
+    int row, col;
+    for (row = 0; row <= ROWS-1; row++) {
+    	for (col = 0; col <= COLS - 1; col++) {
+    		System.out.println("Enter a number: ");
+    		values [row][col]=keyboard.nextInt();
+    	}
+    }
+    System.out.println("Here are the values you entered.");
+    for (row = 0; row <= ROWS -1; row++) {
+    	for (col = 0; col <= COLS -1; col++) {
+    		System.out.println(values [row] [col]);
+    	}
+    }
     	
     
   }
