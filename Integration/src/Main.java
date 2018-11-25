@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.io.IOException;
 import java.util.ArrayList;
 
 // Karan Patel
@@ -226,6 +227,8 @@ public class Main {
     catch (Exception ex){
       System.out.println(ex);
     }
+
+    
     
     //Finding the smallest and largest number, one dimensional array
     int[] arr = {-1, -6, 0, 1 , 7, 20, -77, 12, -2};  //declaration, instantiation and initialization
@@ -233,11 +236,11 @@ public class Main {
     System.out.println("Min = "+ arr[0] );
     System.out.println("Max = "+ arr [arr.length-1] );
     int total = 0;
-    //Use the enhanced for loop
+    //Use the enhanced for loop and the sum of array.
     for (int k : arr) {
       total += k;
     }
-    System.out.println(total);
+    System.out.println("Sum: " +total);
     
     //Search and identify the index in array
     int [] aray = {1, 101, 1001, 10001};
