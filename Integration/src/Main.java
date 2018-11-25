@@ -83,15 +83,14 @@ public class Main {
         System.out.println("The area is " + area); // whole line is Call and argument is inside ().
       }
 
-      public double calculateArea(double rad) { // Here the whole line is called Header and rad is
-                                                // Parameter
-                                                // double is return type and double inside () is
-                                                // parameter data
-                                                // type
+      public double calculateArea(double rad) { 
         return Math.PI * rad * rad;
-
       }
     }
+    /*Here the whole line 86 is called Header. 
+     * rad is parameter, double is return type,
+     * double inside () is parameter data type.
+     */
 
     Random number = new Random();
     int randnum = number.nextInt(10);
@@ -281,7 +280,6 @@ public class Main {
     	}
     }
     	
-    
   }
 
 }
