@@ -40,7 +40,7 @@ public class CollegeClass {
      * code that you want, you can derive your new class from the existing class. In doing this, you
      * can reuse the fields and methods of the existing class without having to write them.
      */
-
+  
   }
 
 }
