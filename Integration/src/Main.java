@@ -1,8 +1,9 @@
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.io.IOException;
+
 import java.util.ArrayList;
+
 
 // Karan Patel
 /*
@@ -76,22 +77,7 @@ public class Main {
     // another object type
     // dataType variablename = (dataType) variableToConvert
 
-    class Area {
-      public void main(String[] args) {
-        double radius = 5.0;
-        double area;
-        area = calculateArea(radius);
-        System.out.println("The area is " + area); // whole line is Call and argument is inside ().
-      }
-
-      public double calculateArea(double rad) { 
-        return Math.PI * rad * rad;
-      }
-    }
-    /*Here the whole line 86 is called Header. 
-     * rad is parameter, double is return type,
-     * double inside () is parameter data type.
-     */
+ 
 
     Random number = new Random();
     int randnum = number.nextInt(10);
@@ -140,16 +126,19 @@ public class Main {
       case 'C':
         System.out.println('C');
         break;
+        default:
+        System.out.println("Not Valid");
+        break;
     }
     System.out.println("Guess the grade you will get: " + letter);
 
-    int sum = myNumber + i;
+    int sum = 5 + i;
     System.out.println("My Sum = " + ++sum);
-    int differ = sum + myNumber - i;
+    int differ = sum + 5 - i;
     System.out.println("My Difference = " + --differ);
     System.out
         .println("Other Relations: " + sum * differ + ", " + sum % differ + ", " + sum / differ);
-    System.out.println(myNumber += differ);
+    System.out.println(differ);
 
     /*
      * Order of Precedence: Java has well defined rules for specifying the order in which the
@@ -205,18 +194,7 @@ public class Main {
     {
     }
 
-    class Calculator {
-      public double calcY (double m, double x) {
-        double y = 0;
-        y =m*x ; 
-        return y;
-      }
-      public double calcY (double m, double x, double b) {
-        double y = 0;
-        y = (m*x) + b;
-        return y;
-      }
-    }
+  
     
     //Exception Handling
     int a = 0;
@@ -262,8 +240,6 @@ public class Main {
     n.add(1);
     System.out.println(n.get(0)+ n.get(1) + n.get(2));
 
-    //Multi-dimensional Arrays
-    int [] [] arrays = { {0,0}, {0,1}, {1,0}, {1,1} };
     //Search the coordinates where a value was found
     Scanner keyboard = new Scanner (System.in);
     final int ROWS = 3;
