@@ -11,6 +11,10 @@ import java.util.ArrayList;
  * course web site
  */
 
+/**Class Main contains weeks based task for the project in COP2006.
+ * For example: array, random num, using variable types, loops, and more.
+ * @author kharn
+ */
 public class Main {
 
   public static void main(String[] args) {
@@ -78,7 +82,10 @@ public class Main {
     // dataType variablename = (dataType) variableToConvert
 
  
-
+/**
+ * Random number form 0 to 10. 
+ * And that number is used in if, and if else statement. 
+ */
     Random number = new Random();
     int randnum = number.nextInt(10);
     System.out.println("Random Number = " + randnum);
@@ -101,6 +108,9 @@ public class Main {
       System.out.println("myNumber is greater than randnum");
     }
 
+    /**
+     * Comparing two string values.
+     */
     String str1 = "Strings are immutable";
     String str2 = "Integers are not immutable";
     int strResult = str1.compareTo(str2);
@@ -113,6 +123,9 @@ public class Main {
      * becomes true.
      */
 
+    /**
+     * Converting string to char (char value is random) and using its value in switch.
+     */
     String abc = "ABC";
     char letter = abc.charAt(number.nextInt(abc.length()));
 
@@ -242,19 +255,19 @@ public class Main {
 
     //Search the coordinates where a value was found
     Scanner keyboard = new Scanner (System.in);
-    final int ROWS = 3;
-    final int COLS = 4;
-    int [] [] values = new int [ROWS][COLS];
+    final int RS = 3;
+    final int CS = 4;
+    int [] [] values = new int [RS][CS];
     int row, col;
-    for (row = 0; row <= ROWS-1; row++) {
-    	for (col = 0; col <= COLS - 1; col++) {
+    for (row = 0; row <= RS-1; row++) {
+    	for (col = 0; col <= CS - 1; col++) {
     		System.out.println("Enter a number: ");
     		values [row][col]=keyboard.nextInt();
     	}
     }
     System.out.println("Here are the values you entered.");
-    for (row = 0; row <= ROWS -1; row++) {
-    	for (col = 0; col <= COLS -1; col++) {
+    for (row = 0; row <= RS -1; row++) {
+    	for (col = 0; col <= CS -1; col++) {
     		System.out.println(values [row] [col]);
     	}
     }

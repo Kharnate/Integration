@@ -1,4 +1,11 @@
 
+/**Find the area of the circle with given radius and using Math.PI. 
+ * The value of area and radius is in double. 
+ * Parameter is rad, double is the return type the statement "double rad" is parameter data type. 
+ * @author kharn
+ * @parm rad
+ */
+
 public class Area {
     
         public void main(String[] args) {
